@@ -1,0 +1,79 @@
+/* Estilos generales para el slider */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Altura completa de la ventana de visualización */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  transition: opacity 1.5s ease-in-out;
+  opacity: 0;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+@keyframes slideAnimation {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.slider {
+  animation: slideAnimation 9s infinite; 
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.text-container h1 {
+  font-size: 4rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700; 
+  margin: 0;
+  line-height: 1.2; 
+}
+
+.text-container p {
+  font-size: 1.5rem; 
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 300; 
+  margin: 1rem 0;
+  line-height: 1.6; 
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: black;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
