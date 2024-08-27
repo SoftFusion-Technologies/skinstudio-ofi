@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { FaTimes, FaMapMarkerAlt, FaInstagram } from "react-icons/fa"; // Importa los íconos de mapa e Instagram
+import { FaTimes, FaMapMarkerAlt, FaInstagram } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
-import LogoMM from '../Images/logomm.jpg'
+import LogoMM from '../Images/logomm.jpg';
+
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const [scrolling, setScrolling] = useState(false);
@@ -29,38 +30,36 @@ const Navbar = () => {
 
   const content = (
     <div
-      className={`bg-white lg:hidden block absolute top-20 w-full left-0 right-0 transition`}
+      className={`mt-12 bg-white lg:hidden block absolute top-16 left-0 right-0 transition z-50`} // Añadido z-50
     >
-      <ul className="text-center text-x1 p-20">
-        <li className="my-4 py-4 border-b border-pink-300  hover:text-white hover:rounded">
+      <ul className="text-center text-xl p-8">
+        <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
           <Link spy={true} smooth={true} to="hero" onClick={handleClick}>
             INICIO
           </Link>
         </li>
-        <li className="my-4 py-4 border-b border-pink-300  hover:text-white hover:rounded">
+        <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
           <Link spy={true} smooth={true} to="us" onClick={handleClick}>
             MAQUILLAJE
           </Link>
         </li>
-        <li className="my-4 py-4 border-b border-pink-300  hover:text-white hover:rounded">
+        <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
           <Link spy={true} smooth={true} to="recipes" onClick={handleClick}>
             TIPS
           </Link>
         </li>
-        <li className="my-4 py-4 border-b border-pink-300  hover:text-white hover:rounded">
+        <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
           <Link spy={true} smooth={true} to="productos" onClick={handleClick}>
             PRODUCTOS
           </Link>
         </li>
-        {/* Enlace para el mapa */}
-        <li className="my-4 py-4 border-b border-pink-300  hover:text-white hover:rounded">
+        <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
           <Link spy={true} smooth={true} to="mapas" onClick={handleClick}>
             <FaMapMarkerAlt className="inline-block mr-2" />
             UBICACIÓN
           </Link>
         </li>
-        {/* Enlace para Instagram */}
-        <li className="my-4 py-4 border-b border-pink-300  hover:text-white hover:rounded">
+        <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
           <a
             href="https://www.instagram.com/mm.skinstudio/"
             target="_blank"
@@ -131,7 +130,7 @@ const Navbar = () => {
         </div>
         <div>{click && content}</div>
         <button
-          className="block sm:hidden transition m-4 p-2 rounded-lg"
+          className="block sm:hidden transition m-4 p-2 rounded-lg z-50" // Añadido z-50
           onClick={handleClick}
         >
           {click ? (
@@ -142,7 +141,6 @@ const Navbar = () => {
         </button>
       </div>
     </nav>
-
   );
 };
 
