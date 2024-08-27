@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { FaTimes, FaMapMarkerAlt, FaInstagram } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
-import LogoMM from '../Images/logomm.jpg';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
