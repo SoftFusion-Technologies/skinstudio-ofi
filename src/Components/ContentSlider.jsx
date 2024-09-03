@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import '../Styles/slider.css'; // Asegúrate de tener este archivo en la carpeta de estilos
-import Cosmetica1 from '../Images/imagen3.webp';
-import Imagen2 from '../Images/imagen2.webp';
-import Imagen3 from '../Images/cosmetica1.webp';
+import Cosmetica1 from '../Images/Slider/imagen3.webp';
+import Imagen2 from '../Images/Slider/imagen2.webp';
+import Imagen3 from '../Images/Slider/imgHeader.webp';
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    { src: Cosmetica1, alt: 'Imagen de cosmética 1' },
+    { src: Imagen3, alt: 'Imagen de cosmética 1' },
     { src: Imagen2, alt: 'Imagen de cosmética 2' },
-    { src: Imagen3, alt: 'Imagen de cosmética 3' }
+    { src: Cosmetica1, alt: 'Imagen de cosmética 3' }
   ];
 
   useEffect(() => {
