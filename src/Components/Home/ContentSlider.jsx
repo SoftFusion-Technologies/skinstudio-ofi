@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import '../Styles/slider.css'; // Asegúrate de tener este archivo en la carpeta de estilos
-import Cosmetica1 from '../Images/Slider/imagen3.webp';
-import Imagen2 from '../Images/Slider/imagen2.webp';
-import Imagen3 from '../Images/Slider/imgHeader.webp';
+import '../../Styles/slider.css'; // Asegúrate de tener este archivo en la carpeta de estilos
+import Cosmetica1 from '../../Images/Slider/imagen3.webp';
+import Imagen2 from '../../Images/Slider/imagen2.webp';
+import Imagen3 from '../../Images/Slider/imgHeader.webp';
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
