@@ -28,11 +28,16 @@ const AboutMe = () => {
         ¿QUIÉN SOY y QUÉ ES AURA?
       </h1>
       <p className="pt-5 text-[17px] font-roboto" data-aos="fade-up">
-        Mi nombre es Micaela, soy cosmetóloga y maquilladora. Es un placer poder empezar a compartir mi trabajo. También me encuentro estudiando cosmiatría en el IFC LACA ♥
-        ✨ Me concentro en la propuesta de tratamientos con productos naturales compatibles con rutinas específicas para todo tipo de piel.
-        ✨ Te podré asesorar y recomendar lo que tu piel necesite específicamente 👌🏼
-        ✨ Disfruto mucho de maquillar y hacer sentir a las mujeres más bellas aún!
-      </p>
+          Mi nombre es Micaela,soy <strong> cosmiatra  y maquilladora.</strong>
+          Es un placer poder empezar a compartir mi trabajo.
+          <br />Me concentro en la propuesta de tratamientos con <strong>productos naturales</strong> compatibles con rutinas específicas para todo tipo de piel.
+          ✨ Te podré asesorar y recomendar lo que tu piel necesite específicamente. 👌🏼 ✨ Disfruto mucho de maquillar y hacer sentir a las mujeres más bellas aún!
+          <br />
+          Aura es mi propia marca de SkinCare.¡Porque Aura? AURA: Por definición es la energía positiva que transmiten los seres humanos y esto para mí es muy significativo
+          Cada vez que entras en contacto con mis cremas tenés la sensación de bienestar y yo también la tengo al acompañarte en tu proceso del cuidado de la piel 
+        Así hacemos crecer juntos esta  comunidad que cada día elija aura 
+        Logrando esta conexión emocional de buena vibra juntos!
+        </p>
       </div>
       <div className="w-full pt-14 lg:p-0 bg-center sm:pt-14 md:w-1/2 lg:w-1/2 lg:mx-auto md:mx-auto flex items-center justify-center" data-aos="fade-up">
         <div
