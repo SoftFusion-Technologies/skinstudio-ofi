@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../../Styles/slider.css'; // Asegúrate de tener este archivo en la carpeta de estilos
-import Cosmetica1 from '../../Images/Slider/imagen3.webp';
-import Imagen2 from '../../Images/Slider/imagen2.webp';
+import Cosmetica1 from '../../Images/QuienSoy/PCremaAntiage.webp';
+import Imagen2 from '../../Images/Products/Gel/PGelLimp2.webp';
 import Imagen3 from '../../Images/Slider/imgHeader.webp';
 
 const Slider = () => {
