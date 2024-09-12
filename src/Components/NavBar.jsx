@@ -94,7 +94,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
-                <Link spy={true} smooth={true} to="us">
+                <Link spy={true} smooth={true} >
                   MAQUILLAJE
                 </Link>
               </li>
