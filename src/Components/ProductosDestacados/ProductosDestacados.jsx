@@ -73,7 +73,7 @@ const ProductosDestacados = () => {
                             <div className="bg-gray-100 rounded-lg shadow-lg p-4 hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
                                 <img
                                     src={prod}
-                                    alt={`Obra Social ${index + 1}`}
+                                    alt={`Producto Dest ${index + 1}`}
                                     className="w-full h-32 object-contain"
                                 />
                             </div>

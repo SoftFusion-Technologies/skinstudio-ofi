@@ -38,7 +38,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
-          <Link spy={true} smooth={true} to="us" onClick={handleClick}>
+          <Link spy={true} smooth={true}  onClick={handleClick}>
             MAQUILLAJE
           </Link>
         </li>
