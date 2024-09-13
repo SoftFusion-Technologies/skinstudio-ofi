@@ -33,7 +33,7 @@ const AboutMe = () => {
           <br />Me concentro en la propuesta de tratamientos con <strong>productos naturales</strong> compatibles con rutinas específicas para todo tipo de piel.
           ✨ Te podré asesorar y recomendar lo que tu piel necesite específicamente. 👌🏼 ✨ Disfruto mucho de maquillar y hacer sentir a las mujeres más bellas aún!
           <br />
-          Aura es mi propia marca de SkinCare.¡Porque Aura? AURA: Por definición es la energía positiva que transmiten los seres humanos y esto para mí es muy significativo
+          Aura es mi propia marca de SkinCare.¡Porque Aura? <strong>AURA</strong>: Por definición es la energía positiva que transmiten los seres humanos y esto para mí es muy significativo
           Cada vez que entras en contacto con mis cremas tenés la sensación de bienestar y yo también la tengo al acompañarte en tu proceso del cuidado de la piel 
         Así hacemos crecer juntos esta  comunidad que cada día elija aura 
         Logrando esta conexión emocional de buena vibra juntos!

@@ -1,6 +1,7 @@
 import React from 'react'
 import ContentSlider from "../Components/Home/ContentSlider"
 import AboutMe from '../Components/Home/AboutMe'
+import ProductosDestacados from '../Components/ProductosDestacados/ProductosDestacados'
 import Footer from '../Components/Footer'
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
       <>
           <ContentSlider></ContentSlider>   
           <AboutMe></AboutMe>
+          <ProductosDestacados />
           <Footer></Footer>
       </>
   )
