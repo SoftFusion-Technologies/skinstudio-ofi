@@ -42,7 +42,7 @@ const Footer = () => {
                                 <a href="#" className="text-pink-300 hover:underline hover:text-pink-400">Maquillaje</a>
                             </li>
                             <li>
-                                <a href="#" className="text-pink-300 hover:underline hover:text-pink-400">Skin Care</a>
+                                <Link to="/skintest" className="text-pink-300 hover:underline hover:text-pink-400">Skin Test</Link>
                             </li>
                             <li>
                                 <a href="#" className="text-pink-300 hover:underline hover:text-pink-400">Accesorios</a>
