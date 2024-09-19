@@ -10,7 +10,7 @@ const ContactSection = () => {
         };
 
         return (
-            <div className="p-12">
+            <div className="p-12 mb-4">
                 <h1 className="ml-1 text-3xl font-bold text-pink-500 mb-4">Contacto:</h1>
             <div className='relative min-h-[600px] bg-cover bg-center rounded-lg overflow-hidden' 
              style={{backgroundImage: `url(${PLocion})`}}>
@@ -28,7 +28,7 @@ const ContactSection = () => {
                          <FaInstagram size={36} />
                         </a>
                         <a
-                            href="https://wa.me/3865411111"
+                            href="https://wa.me/3865213958"
                             className="text-white mt-4 transform transition-transform duration-300 hover:scale-110 "
                             target="_blank"
                             rel="noopener noreferrer"
@@ -42,7 +42,7 @@ const ContactSection = () => {
             </div>
             <button 
                 onClick={handleVolver}
-                className="absolute mt-2 right-12 bg-pink-500 text-white font-bold py-2 px-4 rounded-lg shadow-md
+                className="absolute mb-4 mt-4 left-12 bg-pink-500 text-white font-bold py-2 px-4 rounded-lg shadow-md
                  hover:bg-pink-600 transition duration-300">
                 Volver
             </button>

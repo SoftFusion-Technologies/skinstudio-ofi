@@ -2,6 +2,7 @@ import React from 'react'
 import ContentSlider from "../Components/Home/ContentSlider"
 import AboutMe from '../Components/Home/AboutMe'
 import ProductosDestacados from '../Components/ProductosDestacados/ProductosDestacados'
+import ProductLink from '../Components/Home/GoToProducts'
 import Footer from '../Components/Footer'
 import SkinTest from './SkinTest'
 
@@ -11,6 +12,7 @@ const Home = () => {
           <ContentSlider></ContentSlider>   
           <AboutMe></AboutMe>
           <ProductosDestacados />
+          <ProductLink />
           <Footer></Footer>
       </>
   )

@@ -56,7 +56,7 @@ const Navbar = () => {
     >
       <ul className="text-center text-xl p-8">
         <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
-          <CustomLink to="hero" isScroll={true} onClick={handleClick}>
+          <CustomLink to="/" isScroll={false} onClick={handleClick}>
             INICIO
           </CustomLink>
         </li>
@@ -71,7 +71,7 @@ const Navbar = () => {
           </CustomLink>
         </li>
         <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
-          <CustomLink to="productos" isScroll={true} onClick={handleClick}>
+          <CustomLink to="/productos" isScroll={false} onClick={handleClick}>
             PRODUCTOS
           </CustomLink>
         </li>
@@ -117,7 +117,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <ul className="flex gap-8 sm:mx-auto md:mr-16 lg:mr-16 text-lg">
               <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
-                <CustomLink to="hero" isScroll={true}>
+                <CustomLink to="/" isScroll={false}>
                   INICIO
                 </CustomLink>
               </li>
@@ -132,7 +132,7 @@ const Navbar = () => {
                 </CustomLink>
               </li>
               <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
-                <CustomLink to="productos" isScroll={true}>
+                <CustomLink to="/productos" isScroll={false}>
                   PRODUCTOS
                 </CustomLink>
               </li>

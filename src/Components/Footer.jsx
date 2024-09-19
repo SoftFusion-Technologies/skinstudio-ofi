@@ -67,14 +67,14 @@ const Footer = () => {
                         <h2 className="text-lg font-bold text-pink-300 mb-4">CONTACTÁNOS</h2>
                         <nav id="link-list__footer">
                             <ul className="space-y-2 text-center items-center">
-                                <li><a href="https://wa.me/+5493865111111" 
+                                <li><a href="https://wa.me/3865213958" 
                                        className="text-pink-300 hover:text-pink-400 flex items-center"
                                        target="_blank" 
                                        rel="noopener noreferrer">
                                         <FaWhatsapp size={24} 
                                                     className="mr-1" 
                                         />
-                                        3865-111111
+                                        3865 21-3958
                                     </a>
                                 </li>
                                 <li><a href="mailto:skincare@gmail.com" 
