@@ -11,7 +11,6 @@ const Home = () => {
           <ContentSlider></ContentSlider>   
           <AboutMe></AboutMe>
           <ProductosDestacados />
-          <SkinTest />
           <Footer></Footer>
       </>
   )

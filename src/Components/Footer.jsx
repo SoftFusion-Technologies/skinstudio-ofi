@@ -13,10 +13,10 @@ const Footer = () => {
         <footer className="bg-transparent text-pink-300 py-8">
             <div className="px-4 sm:px-6 lg:px-8 mx-auto max-w-screen-lg"
             /*className="flex flex-col space-y-8 px-4 sm:px-6 lg:px-8 mx-auto max-w-screen-lg"*/>
-                <h2 className="text-2xl font-roboto font-bold text-center">PORQUE TÚ LO VALES</h2>
+                <h2 className="text-2xl font-roboto font-bold text-center"></h2>
                 {/*Nuestras Redes*/}
                 <div className="flex flex-col items-center p-8">
-                    <h2 className="text-xl font-bold text-pink-300">SKIN STUDIO</h2>
+                    <h1 className="text-3xl font-bold text-pink-300">SKIN STUDIO</h1>
                     <div className="flex space-x-4 mt-4">
                         <a href="#" className="text-pink-300 hover:text-pink-400"><FaFacebook size={24} /></a>
                         <a href="https://www.instagram.com/mm.skinstudio/" 

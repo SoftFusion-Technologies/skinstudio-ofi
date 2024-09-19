@@ -1,5 +1,7 @@
 import { useState } from "react";
+import {useNavigate} from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { FaArrowLeft } from 'react-icons/fa';
 import piel1 from '../../Images/SkinTest/piel1.webp'
 import piel2 from '../../Images/SkinTest/piel2.webp'
 import piel3 from '../../Images/SkinTest/piel3.webp'
@@ -15,6 +17,7 @@ import PSerum1 from '../../Images/Products/Serum/PSerum1.webp'
 import PGelLimp3 from '../../Images/Products/Gel/PgelLimp3.webp'
 
 const TestSlider = () => {
+  const navigate = useNavigate();  
   const [step, setStep] = useState(1);
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [selectedOptions, setSelectedOptions] = useState({
@@ -27,6 +30,15 @@ const TestSlider = () => {
 
   const handleStart = () => {
     setStep(prevStep => prevStep + 1);
+  };
+
+
+  const handleBack = () => {
+    if (step === 1) {
+      navigate(-1); // Vuelve a la pagina anterior
+    } else {
+      setStep(prevStep => (prevStep > 1 ? prevStep - 1 : prevStep)); //Volver al paso anterior
+    }
   };
 
   const productosRecomendados = [
@@ -132,6 +144,12 @@ const TestSlider = () => {
                               Iniciar Test
                           </button>
                       </div>
+                        < button className="absolute pt-4 bottom-1 right-4 font-semibold text-lg text-pink-400 
+                            transition-transform duration-300 hover:scale-110 flex items-center" 
+                               onClick={handleBack}>
+                              <FaArrowLeft className="h-5 w-5 mr-2" />
+                            Atrás
+                        </button>
                   </motion.div>
               )}
 
@@ -186,6 +204,12 @@ const TestSlider = () => {
                               </button>
                           </div>
                       </div>
+                      < button className="absolute pt-4 bottom-1 right-4 font-semibold text-lg text-pink-400 
+                        transition-transform duration-300 hover:scale-110 flex items-center" 
+                               onClick={handleBack}>
+                              <FaArrowLeft className="h-5 w-5 mr-2" />
+                            Atrás
+                        </button>
                   </motion.div>
               )}
 
@@ -236,6 +260,15 @@ const TestSlider = () => {
                                   ))}
                               </div>
                           </div>
+                          <div className="flex justify-end mt-4 mb-2">
+                                <button 
+                                    className="mt-4 mb-2 font-semibold text-lg text-pink-400 
+                                    transition-transform duration-300 hover:scale-110 flex items-center" 
+                                    onClick={handleBack}>
+                                        <FaArrowLeft className="h-5 w-5 mr-2" /> 
+                                        Atrás
+                                </button>
+                            </div>
                       </div>
                   </motion.div>
               )}
@@ -291,6 +324,12 @@ const TestSlider = () => {
                               </button>
                           </div>
                       </div>
+                      < button className="absolute pt-4 bottom-1 right-4 font-semibold text-lg text-pink-400 
+                            transition-transform duration-300 hover:scale-110 flex items-center" 
+                               onClick={handleBack}>
+                              <FaArrowLeft className="h-5 w-5 mr-2" />
+                            Atrás
+                        </button>
                   </motion.div>
               )}
 
@@ -352,6 +391,12 @@ const TestSlider = () => {
                               </button>
                           </div>
                       </div>
+                      < button className="absolute pt-4 bottom-1 right-4 font-semibold text-lg text-pink-400 
+                            transition-transform duration-300 hover:scale-110 flex items-center" 
+                               onClick={handleBack}>
+                              <FaArrowLeft className="h-5 w-5 mr-2" />
+                            Atrás
+                        </button>
                   </motion.div>
               )}
 

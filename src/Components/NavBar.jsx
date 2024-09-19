@@ -1,7 +1,30 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import {Link as RouterLink} from "react-router-dom";
 import { FaTimes, FaMapMarkerAlt, FaInstagram } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
+
+const CustomLink = ({ to, isScroll, children, onClick }) => {
+  if (isScroll) {
+    return (
+      <ScrollLink
+        to={to}
+        spy={true}
+        smooth={true}
+        onClick={onClick}
+        className="cursor-pointer"
+      >
+        {children}
+      </ScrollLink>
+    );
+  }
+
+  return (
+    <RouterLink to={to} onClick={onClick} className="cursor-pointer">
+      {children}
+    </RouterLink>
+  );
+};
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -33,30 +56,35 @@ const Navbar = () => {
     >
       <ul className="text-center text-xl p-8">
         <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
-          <Link spy={true} smooth={true} to="hero" onClick={handleClick}>
+          <CustomLink to="hero" isScroll={true} onClick={handleClick}>
             INICIO
-          </Link>
+          </CustomLink>
         </li>
         <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
-          <Link spy={true} smooth={true}  onClick={handleClick}>
+          <CustomLink to="maquillaje" isScroll={true} onClick={handleClick}>
             MAQUILLAJE
-          </Link>
+          </CustomLink>
         </li>
         <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
-          <Link spy={true} smooth={true} to="recipes" onClick={handleClick}>
-            TIPS
-          </Link>
+          <CustomLink to="/skintest" isScroll={false} onClick={handleClick}>
+            SKIN TEST
+          </CustomLink>
         </li>
         <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
-          <Link spy={true} smooth={true} to="productos" onClick={handleClick}>
+          <CustomLink to="productos" isScroll={true} onClick={handleClick}>
             PRODUCTOS
-          </Link>
+          </CustomLink>
         </li>
         <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
-          <Link spy={true} smooth={true} to="mapas" onClick={handleClick}>
+          <CustomLink to="/contacto" isScroll={false} onClick={handleClick}>
+            CONTACTO
+          </CustomLink>
+        </li>
+        <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
+          <CustomLink to="mapas" isScroll={true} onClick={handleClick}>
             <FaMapMarkerAlt className="inline-block mr-2" />
             UBICACIÓN
-          </Link>
+          </CustomLink>
         </li>
         <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
           <a
@@ -89,30 +117,35 @@ const Navbar = () => {
           <div className="flex items-center">
             <ul className="flex gap-8 sm:mx-auto md:mr-16 lg:mr-16 text-lg">
               <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
-                <Link spy={true} smooth={true} to="hero">
+                <CustomLink to="hero" isScroll={true}>
                   INICIO
-                </Link>
+                </CustomLink>
               </li>
               <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
-                <Link spy={true} smooth={true} >
+                <CustomLink to="maquillaje" isScroll={true}>
                   MAQUILLAJE
-                </Link>
+                </CustomLink>
+              </li>
+              <li className="transition border-b-2 border-transparent whitespace-nowrap hover:border-pink-500 cursor-pointer">
+                <CustomLink to="/skintest" isScroll={false}>
+                  SKIN TEST
+                </CustomLink>
               </li>
               <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
-                <Link spy={true} smooth={true} to="recipes">
-                  TIPS
-                </Link>
-              </li>
-              <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
-                <Link spy={true} smooth={true} to="productos">
+                <CustomLink to="productos" isScroll={true}>
                   PRODUCTOS
-                </Link>
+                </CustomLink>
               </li>
               <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
-                <Link spy={true} smooth={true} to="mapas">
+                <CustomLink to="/contacto" isScroll={false}>
+                  CONTACTO
+                </CustomLink>
+              </li>
+              <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
+                <CustomLink to="mapas" isScroll={true}>
                   <FaMapMarkerAlt className="inline-block mr-2" />
                   UBICACIÓN
-                </Link>
+                </CustomLink>
               </li>
               <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
                 <a
