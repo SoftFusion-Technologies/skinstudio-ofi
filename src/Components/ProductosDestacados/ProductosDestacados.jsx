@@ -64,8 +64,8 @@ const ProductosDestacados = () => {
     return (
         <div className="py-12 font-lora font-bold" data-aos="fade-down">
             <div className="container mx-auto">
-                <h2 className="text-4xl font-lora text-center underline text-pink-500 mb-8">
-                    PRODUCTOS DESTACADOS
+                <h2 className="text-4xl font-lora text-center text-pink-500 mb-8">
+                    DESTACADOS
                 </h2>
                 <Slider {...sliderSettings} className="slick-slider">
                     {ProductosDestacados.map((prod, index) => (

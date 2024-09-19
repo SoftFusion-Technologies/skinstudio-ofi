@@ -3,19 +3,17 @@ import ContentSlider from "../Components/Home/ContentSlider"
 import AboutMe from '../Components/Home/AboutMe'
 import ProductosDestacados from '../Components/ProductosDestacados/ProductosDestacados'
 import ProductLink from '../Components/Home/GoToProducts'
-import Footer from '../Components/Footer'
 import SkinTest from './SkinTest'
-
+import Mapa from '../Components/Mapa'
 const Home = () => {
   return (
-      <>
-          <ContentSlider></ContentSlider>   
-          <AboutMe></AboutMe>
-          <ProductosDestacados />
-          <ProductLink />
-          <Footer></Footer>
-      </>
-  )
+    <>
+      <ContentSlider></ContentSlider>
+      <AboutMe></AboutMe>
+      <ProductLink />
+      <Mapa></Mapa>
+    </>
+  );
 }
 
 export default Home

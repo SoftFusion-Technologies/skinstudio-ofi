@@ -11,7 +11,7 @@ const ContactSection = () => {
 
         return (
             <div className="p-12 mb-4">
-                <h1 className="ml-1 text-3xl font-bold text-pink-500 mb-4">Contacto:</h1>
+            {/* <h1 className="ml-1 text-3xl font-bold text-pink-500 mb-4">Contacto</h1> */}
             <div className='relative min-h-[600px] bg-cover bg-center rounded-lg overflow-hidden' 
              style={{backgroundImage: `url(${PLocion})`}}>
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">

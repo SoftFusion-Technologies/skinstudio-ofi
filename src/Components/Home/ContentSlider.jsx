@@ -36,7 +36,7 @@ const Slider = () => {
       ))}
       <div className="text-container">
         <h1>SKIN STUDIO</h1>
-        <p>Descubre lo mejor en cosmetología y productos de belleza en nuestro estudio. Ofrecemos una gama completa de tratamientos personalizados y productos de alta calidad para realzar tu belleza natural.</p>
+        <p className='font-serif'>Descubre lo mejor en cosmetología y productos de belleza en nuestro estudio. Ofrecemos una gama completa de tratamientos personalizados y productos de alta calidad para realzar tu belleza natural.</p>
          <button
             onClick={() => {
             const section = document.getElementById('us');
@@ -44,7 +44,7 @@ const Slider = () => {
             }}
             className="buttonHome"
               >
-                Conocer más
+                CONOCER MÁS
               </button>
        </div>
     </div>

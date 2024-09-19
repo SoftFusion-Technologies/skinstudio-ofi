@@ -1,7 +1,4 @@
-.font-montserrat {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.font-roboto {
-  font-family: 'Roboto', sans-serif;
+.h1-about{
+  font-size: 4rem;
+  font-family: 'Playfair Display', serif;
 }

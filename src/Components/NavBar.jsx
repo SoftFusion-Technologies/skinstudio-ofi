@@ -50,6 +50,13 @@ const Navbar = () => {
     };
   }, []);
 
+  const scrollToLocation = () => {
+    document.getElementById('ubicacion').scrollIntoView({
+      behavior: 'smooth', // Desplazamiento suave
+      block: 'start' // Alinea el inicio del elemento con la parte superior de la vista
+    });
+  };
+
   const content = (
     <div
       className={`mt-12 bg-white lg:hidden block absolute top-16 left-0 right-0 transition z-50`} // Añadido z-50
@@ -60,11 +67,11 @@ const Navbar = () => {
             INICIO
           </CustomLink>
         </li>
-        <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
+        {/* <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
           <CustomLink to="maquillaje" isScroll={true} onClick={handleClick}>
             MAQUILLAJE
           </CustomLink>
-        </li>
+        </li> */}
         <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
           <CustomLink to="/skintest" isScroll={false} onClick={handleClick}>
             SKIN TEST
@@ -81,10 +88,12 @@ const Navbar = () => {
           </CustomLink>
         </li>
         <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
-          <CustomLink to="mapas" isScroll={true} onClick={handleClick}>
-            <FaMapMarkerAlt className="inline-block mr-2" />
+          <p
+            className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer"
+            onClick={scrollToLocation}
+          >
             UBICACIÓN
-          </CustomLink>
+          </p>
         </li>
         <li className="my-4 py-4 border-b border-pink-300 hover:text-white hover:rounded">
           <a
@@ -105,57 +114,77 @@ const Navbar = () => {
     <nav className={`bg-${scrolling ? 'white' : 'transparent'} shadow-md`}>
       <div className="h-10vh flex justify-between items-center z-50 text-pink-600 lg:py-5 lg:px-20 py-4 px-4">
         <div className="flex items-center flex-1">
-          <div className="flex flex-col items-center -mt-5">
-            <span role="img" aria-label="crown" className="text-5xl mb-2">
-              👑
-            </span>
-            <div className="text-3xl font-extrabold text-pink-600 mb-1">Mica Molina</div>
-            <div className="text-md text-gray-600">Cosmetóloga & Make Up</div>
-          </div>
+          <a href="/">
+            <div className="flex flex-col items-center -mt-5">
+              <span role="img" aria-label="crown" className="text-5xl mb-2">
+                👑
+              </span>
+              <div className="text-3xl font-extrabold text-pink-600 mb-1">
+                Mica Molina
+              </div>
+              <div className="text-md text-gray-600">Cosmetóloga & Make Up</div>
+            </div>
+          </a>
         </div>
         <div className="hidden sm:flex sm:mr-5 lg:flex md:flex lg:flex-1 items-center justify-end font-medium">
           <div className="flex items-center">
             <ul className="flex gap-8 sm:mx-auto md:mr-16 lg:mr-16 text-lg">
-              <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
+              {/* <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
                 <CustomLink to="/" isScroll={false}>
                   INICIO
                 </CustomLink>
-              </li>
-              <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
-                <CustomLink to="maquillaje" isScroll={true}>
-                  MAQUILLAJE
-                </CustomLink>
-              </li>
-              <li className="transition border-b-2 border-transparent whitespace-nowrap hover:border-pink-500 cursor-pointer">
-                <CustomLink to="/skintest" isScroll={false}>
-                  SKIN TEST
-                </CustomLink>
-              </li>
+              </li> */}
               <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
                 <CustomLink to="/productos" isScroll={false}>
                   PRODUCTOS
                 </CustomLink>
               </li>
+
+              <li className="transition border-b-2 border-transparent whitespace-nowrap hover:border-pink-500 cursor-pointer">
+                <CustomLink to="/skintest" isScroll={false}>
+                  SKIN TEST
+                </CustomLink>
+              </li>
+
+              {/* <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
+                <CustomLink to="maquillaje" isScroll={true}>
+                  MAQUILLAJE
+                </CustomLink>
+              </li> */}
               <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
                 <CustomLink to="/contacto" isScroll={false}>
                   CONTACTO
                 </CustomLink>
               </li>
-              <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
-                <CustomLink to="mapas" isScroll={true}>
-                  <FaMapMarkerAlt className="inline-block mr-2" />
-                  UBICACIÓN
+              {/* 
+               <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
+                <CustomLink
+                  to="mapas"
+                  isScroll={true}
+                  className="flex items-center"
+                >
+                  <FaMapMarkerAlt className="mr-2" />
+                  <span>UBICACIÓN</span>
                 </CustomLink>
-              </li>
-              <li className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
+              </li> */}
+
+              <li className="flex items-center transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer">
                 <a
                   href="https://www.instagram.com/mm.skinstudio/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="flex items-center"
                 >
-                  <FaInstagram className="inline-block mr-2" />
-                  INSTAGRAM
+                  <FaInstagram className="mr-2" />
+                  <span>INSTAGRAM</span>
                 </a>
+              </li>
+
+              <li
+                className="transition border-b-2 border-transparent hover:border-pink-500 cursor-pointer"
+                onClick={scrollToLocation}
+              >
+                UBICACIÓN
               </li>
             </ul>
           </div>
