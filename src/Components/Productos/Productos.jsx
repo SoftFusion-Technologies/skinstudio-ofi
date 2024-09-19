@@ -25,7 +25,11 @@ const Productos = () => {
     const navigate = useNavigate(); 
 
     useEffect(() => {
+    const scrollToTop = () => {
         window.scrollTo(0, 0);
+    };
+
+    requestAnimationFrame(scrollToTop);
     }, []);
 
    const sections = [
