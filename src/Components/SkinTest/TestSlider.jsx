@@ -116,344 +116,389 @@ const TestSlider = () => {
 
     return (
       <div className="relative flex items-center justify-center min-h-screen bg-transparent p-4 sm:p-8 md:p-12 overflow-hidden">
-          <AnimatePresence>
-              {step === 1 && (
-                  <motion.div
-                      key="step1"
-                      initial={{ x: 0, opacity: 1 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      exit={{ x: "-100%", opacity: 0 }}
-                      transition={{ duration: 1, ease: "easeInOut" }}
-                      className="absolute w-full max-w-md sm:max-w-lg md:max-w-5xl p-6 sm:p-8 md:p-40 bg-pink-100 rounded-xl shadow-lg"
-                  >
-                      <div className="bg-pink-100 text-center ">
-                          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 text-gray-800">
-                              Skin Test
-                          </h1>
-                          <h2 className="text-xl sm:text-2xl text-gray-600 mb-4">
-                              by Skin Studio
-                          </h2>
-                          <p className="text-base sm:text-lg text-gray-700 mb-6">
-                              Responde a las preguntas y descubre tu producto ideal
-                          </p>
-                          <button
-                              className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+        <AnimatePresence>
+          {step === 1 && (
+            <motion.div
+              key="step1"
+              initial={{ x: 0, opacity: 1 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: '-100%', opacity: 0 }}
+              transition={{ duration: 1, ease: 'easeInOut' }}
+              className="absolute w-full max-w-md sm:max-w-lg md:max-w-5xl p-6 sm:p-8 md:p-40 bg-pink-100 rounded-xl shadow-lg"
+            >
+              <div className="bg-pink-100 text-center ">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 text-gray-800">
+                  Skin Test
+                </h1>
+                <h2 className="text-xl sm:text-2xl text-gray-600 mb-4">
+                  by Skin Studio
+                </h2>
+                <p className="text-base sm:text-lg text-gray-700 mb-6">
+                  Responde a las preguntas y descubre tu producto ideal
+                </p>
+                <button
+                  className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
                                 hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                              onClick={handleStart}
-                          >
-                              Iniciar Test
-                          </button>
-                      </div>
-                        < button className="absolute pt-4 bottom-1 right-4 font-semibold text-lg text-pink-400 
-                            transition-transform duration-300 hover:scale-110 flex items-center" 
-                               onClick={handleBack}>
-                              <FaArrowLeft className="h-5 w-5 mr-2" />
-                            Atrás
-                        </button>
-                  </motion.div>
-              )}
+                  onClick={handleStart}
+                >
+                  Iniciar Test
+                </button>
+              </div>
+              <button
+                className="absolute pt-4 bottom-1 right-4 font-semibold text-lg text-pink-400 
+                            transition-transform duration-300 hover:scale-110 flex items-center"
+                onClick={handleBack}
+              >
+                <FaArrowLeft className="h-5 w-5 mr-2" />
+                Atrás
+              </button>
+            </motion.div>
+          )}
 
-              {step === 2 && (
-                  <motion.div
-                      key="step2"
-                      initial={{ x: "100%", opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      exit={{ x: "-100%", opacity: 0 }}
-                      transition={{ duration: 1, ease: "easeInOut" }}
-                      className="absolute w-full max-w-md sm:max-w-lg md:max-w-5xl p-6 sm:p-8 md:p-12 bg-pink-100 rounded-xl shadow-lg overflow-hidden"
+          {step === 2 && (
+            <motion.div
+              key="step2"
+              initial={{ x: '100%', opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: '-100%', opacity: 0 }}
+              transition={{ duration: 1, ease: 'easeInOut' }}
+              className="absolute w-full max-w-md sm:max-w-lg md:max-w-5xl p-6 sm:p-8 md:p-12 bg-pink-100 rounded-xl shadow-lg overflow-hidden"
+            >
+              <div className="bg-pink-100 text-center space-y-4 p-4">
+                <h2 className="text-xl sm:text-2xl text-gray-600 mb-4">
+                  Seleccioná tu rango de edad
+                </h2>
+                <div className="flex flex-col space-y-4 items-center">
+                  <button
+                    className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+                                    hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
+                    onClick={() => handleOptionSelect('age', 'Menos de 20')}
                   >
-                      <div className="bg-pink-100 text-center space-y-4 p-4">
-                          <h2 className="text-xl sm:text-2xl text-gray-600 mb-4">
-                              Seleccioná tu rango de edad
-                          </h2>
-                          <div className="flex flex-col space-y-4 items-center">
-                              <button
-                                  className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+                    Menos de 20
+                  </button>
+                  <button
+                    className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
                                     hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                                  onClick={() => handleOptionSelect('age', 'Menos de 20')}
-                              >
-                                  Menos de 20
-                              </button>
-                              <button
-                                  className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+                    onClick={() => handleOptionSelect('age', 'Entre 20 y 29')}
+                  >
+                    Entre 20 y 29
+                  </button>
+                  <button
+                    className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
                                     hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                                  onClick={() => handleOptionSelect('age', 'Entre 20 y 29')}
-                              >
-                                  Entre 20 y 29
-                              </button>
-                              <button
-                                  className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+                    onClick={() => handleOptionSelect('age', 'Entre 30 y 39')}
+                  >
+                    Entre 30 y 39
+                  </button>
+                  <button
+                    className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
                                     hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                                  onClick={() => handleOptionSelect('age', 'Entre 30 y 39')}
-                              >
-                                  Entre 30 y 39
-                              </button>
-                              <button
-                                  className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+                    onClick={() => handleOptionSelect('age', 'Entre 40 y 49')}
+                  >
+                    Entre 40 y 49
+                  </button>
+                  <button
+                    className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
                                     hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                                  onClick={() => handleOptionSelect('age', 'Entre 40 y 49')}
-                              >
-                                  Entre 40 y 49
-                              </button>
-                              <button
-                                  className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
-                                    hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                                  onClick={() => handleOptionSelect('age', 'Más de 50')}
-                              >
-                                  Más de 50
-                              </button>
-                          </div>
-                      </div>
-                      < button className="absolute pt-4 bottom-1 right-4 font-semibold text-lg text-pink-400 
-                        transition-transform duration-300 hover:scale-110 flex items-center" 
-                               onClick={handleBack}>
-                              <FaArrowLeft className="h-5 w-5 mr-2" />
-                            Atrás
-                        </button>
-                  </motion.div>
-              )}
+                    onClick={() => handleOptionSelect('age', 'Más de 50')}
+                  >
+                    Más de 50
+                  </button>
+                </div>
+              </div>
+              <button
+                className="absolute pt-4 bottom-1 right-4 font-semibold text-lg text-pink-400 
+                        transition-transform duration-300 hover:scale-110 flex items-center"
+                onClick={handleBack}
+              >
+                <FaArrowLeft className="h-5 w-5 mr-2" />
+                Atrás
+              </button>
+            </motion.div>
+          )}
 
-              {step === 3 && (
-                  <motion.div
-                      key="step3"
-                      initial={{ x: "100%", opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      exit={{ x: "-100%", opacity: 0 }}
-                      transition={{ duration: 1, ease: "easeInOut" }}
-                      className="flex w-full max-w-md sm:max-w-lg md:max-w-5xl p-4 sm:p-6 md:p-12 bg-pink-100 rounded-xl shadow-lg"
-                  >
-                      <div className="bg-pink-100 flex flex-col h-full">
-                          <div className="text-center p-4">
-                              <h2 className="text-xl sm:text-2xl text-gray-600 mb-4">
-                                  Seleccioná tu Fototipo
-                              </h2>
-                              <h3 className="text-base sm:text-lg text-gray-700 mb-6">
-                                  El fototipo es la capacidad de la piel para asimilar la radiación solar
-                              </h3>
+          {step === 3 && (
+            <motion.div
+              key="step3"
+              initial={{ x: '100%', opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: '-100%', opacity: 0 }}
+              transition={{ duration: 1, ease: 'easeInOut' }}
+              className="flex w-full max-w-md sm:max-w-lg md:max-w-5xl p-4 sm:p-6 md:p-12 bg-pink-100 rounded-xl shadow-lg"
+            >
+              <div className="bg-pink-100 flex flex-col h-full">
+                <div className="text-center p-4">
+                  <h2 className="text-xl sm:text-2xl text-gray-600 mb-4">
+                    Seleccioná tu Fototipo
+                  </h2>
+                  <h3 className="text-base sm:text-lg text-gray-700 mb-6">
+                    El fototipo es la capacidad de la piel para asimilar la
+                    radiación solar
+                  </h3>
+                </div>
+                <div className="flex-1 overflow-y-auto p-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {fototipos.map(({ src, alt, text, hoverTexts }, index) => (
+                      <div
+                        key={alt}
+                        className="relative flex flex-col items-center"
+                        onMouseEnter={() => setHoveredIndex(index)}
+                        onMouseLeave={() => setHoveredIndex(null)}
+                        onClick={() => handleOptionSelect('skinType', text)}
+                      >
+                        <motion.img
+                          src={src}
+                          alt={alt}
+                          className={`w-full max-w-[360px] h-auto object-cover rounded-lg transition-opacity duration-300 ${
+                            hoveredIndex === index
+                              ? 'opacity-50'
+                              : 'opacity-100'
+                          }`}
+                        />
+                        {hoveredIndex === index && (
+                          <div className="absolute inset-0 flex flex-col items-center justify-center bg-white bg-opacity-80 p-4 rounded-lg shadow-lg">
+                            <ul className="list-disc text-left text-gray-700 space-y-2 m-4">
+                              {hoverTexts.map((text, textIndex) => (
+                                <li key={textIndex}>{text}</li>
+                              ))}
+                            </ul>
                           </div>
-                          <div className="flex-1 overflow-y-auto p-4">
-                              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                                  {fototipos.map(({ src, alt, text, hoverTexts }, index) => (
-                                      <div
-                                          key={alt}
-                                          className="relative flex flex-col items-center"
-                                          onMouseEnter={() => setHoveredIndex(index)}
-                                          onMouseLeave={() => setHoveredIndex(null)}
-                                          onClick={() => handleOptionSelect('skinType', text)}
-                                      >
-                                          <motion.img
-                                              src={src}
-                                              alt={alt}
-                                              className={`w-full max-w-[360px] h-auto object-cover rounded-lg transition-opacity duration-300 ${hoveredIndex === index ? 'opacity-50' : 'opacity-100'}`}
-                                          />
-                                          {hoveredIndex === index && (
-                                              <div className="absolute inset-0 flex flex-col items-center justify-center bg-white bg-opacity-80 p-4 rounded-lg shadow-lg">
-                                                  <ul className="list-disc text-left text-gray-700 space-y-2 m-4">
-                                                      {hoverTexts.map((text, textIndex) => (
-                                                          <li key={textIndex}>{text}</li>
-                                                      ))}
-                                                  </ul>
-                                              </div>
-                                          )}
-                                          <p className="mt-2 text-gray-600">{text}</p>
-                                      </div>
-                                  ))}
-                              </div>
-                          </div>
-                          <div className="flex justify-end mt-4 mb-2">
-                                <button 
-                                    className="mt-4 mb-2 font-semibold text-lg text-pink-400 
-                                    transition-transform duration-300 hover:scale-110 flex items-center" 
-                                    onClick={handleBack}>
-                                        <FaArrowLeft className="h-5 w-5 mr-2" /> 
-                                        Atrás
-                                </button>
-                            </div>
+                        )}
+                        <p className="mt-2 text-gray-600">{text}</p>
                       </div>
-                  </motion.div>
-              )}
+                    ))}
+                  </div>
+                </div>
+                <div className="flex justify-end mt-4 mb-2">
+                  <button
+                    className="mt-4 mb-2 font-semibold text-lg text-pink-400 
+                                    transition-transform duration-300 hover:scale-110 flex items-center"
+                    onClick={handleBack}
+                  >
+                    <FaArrowLeft className="h-5 w-5 mr-2" />
+                    Atrás
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          )}
 
-              {step === 4 && (
-                  <motion.div
-                      key="step4"
-                      initial={{ x: "100%", opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      exit={{ x: "-100%", opacity: 0 }}
-                      transition={{ duration: 1, ease: "easeInOut" }}
-                      className="absolute w-full max-w-md sm:max-w-lg md:max-w-5xl p-6 sm:p-8 md:p-12 bg-pink-100 rounded-xl shadow-lg overflow-hidden"
+          {step === 4 && (
+            <motion.div
+              key="step4"
+              initial={{ x: '100%', opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: '-100%', opacity: 0 }}
+              transition={{ duration: 1, ease: 'easeInOut' }}
+              className="absolute w-full max-w-md sm:max-w-lg md:max-w-5xl p-6 sm:p-8 md:p-12 bg-pink-100 rounded-xl shadow-lg overflow-hidden"
+            >
+              <div className="bg-pink-100 text-center space-y-4 p-4">
+                <h2 className="text-xl sm:text-2xl text-gray-600 mb-4">
+                  ¿Cómo se ve tu piel?
+                </h2>
+                <div className="flex flex-col space-y-4 items-center">
+                  <button
+                    className="w-full max-w-lg px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+                                    hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
+                    onClick={() =>
+                      handleOptionSelect(
+                        'skinAppearance',
+                        'Suave, con brillo moderado y color uniforme'
+                      )
+                    }
                   >
-                      <div className="bg-pink-100 text-center space-y-4 p-4">
-                          <h2 className="text-xl sm:text-2xl text-gray-600 mb-4">
-                              ¿Cómo se ve tu piel?
-                          </h2>
-                          <div className="flex flex-col space-y-4 items-center">
-                              <button
-                                  className="w-full max-w-lg px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+                    Suave, con brillo moderado y color uniforme
+                  </button>
+                  <button
+                    className="w-full max-w-lg px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
                                     hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                                  onClick={() => handleOptionSelect('skinAppearance', 'Suave, con brillo moderado y color uniforme')}
-                              >
-                                  Suave, con brillo moderado y color uniforme
-                              </button>
-                              <button
-                                  className="w-full max-w-lg px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+                    onClick={() =>
+                      handleOptionSelect('skinAppearance', 'Áspera y opaca')
+                    }
+                  >
+                    Áspera y opaca
+                  </button>
+                  <button
+                    className="w-full max-w-lg px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
                                     hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                                  onClick={() => handleOptionSelect('skinAppearance', 'Áspera y opaca')}
-                              >
-                                  Áspera y opaca
-                              </button>
-                              <button
-                                  className="w-full max-w-lg px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+                    onClick={() =>
+                      handleOptionSelect(
+                        'skinAppearance',
+                        'Brillosa y con poros perceptibles'
+                      )
+                    }
+                  >
+                    Brillosa y con poros perceptibles
+                  </button>
+                  <button
+                    className="w-full max-w-lg px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
                                     hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                                  onClick={() => handleOptionSelect('skinAppearance', 'Brillosa y con poros perceptibles')}
-                              >
-                                  Brillosa y con poros perceptibles
-                              </button>
-                              <button
-                                  className="w-full max-w-lg px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+                    onClick={() =>
+                      handleOptionSelect(
+                        'skinAppearance',
+                        'Opaca con poros perceptibles y descamación'
+                      )
+                    }
+                  >
+                    Opaca con poros perceptibles y descamación
+                  </button>
+                  <button
+                    className="w-full max-w-lg px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
                                     hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                                  onClick={() => handleOptionSelect('skinAppearance', 'Opaca con poros perceptibles y descamación')}
-                              >
-                                  Opaca con poros perceptibles y descamación
-                              </button>
-                              <button
-                                  className="w-full max-w-lg px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
-                                    hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                                  onClick={() => handleOptionSelect('skinAppearance', 'Brillosa en la zona central y seca o normal en los laterales')}
-                              >
-                                  Brillosa en la zona central y seca o normal en los laterales
-                              </button>
-                          </div>
-                      </div>
-                      < button className="absolute pt-4 bottom-1 right-4 font-semibold text-lg text-pink-400 
-                            transition-transform duration-300 hover:scale-110 flex items-center" 
-                               onClick={handleBack}>
-                              <FaArrowLeft className="h-5 w-5 mr-2" />
-                            Atrás
-                        </button>
-                  </motion.div>
-              )}
+                    onClick={() =>
+                      handleOptionSelect(
+                        'skinAppearance',
+                        'Brillosa en la zona central y seca o normal en los laterales'
+                      )
+                    }
+                  >
+                    Brillosa en la zona central y seca o normal en los laterales
+                  </button>
+                </div>
+              </div>
+              <button
+                className="absolute pt-4 bottom-1 right-4 font-semibold text-lg text-pink-400 
+                            transition-transform duration-300 hover:scale-110 flex items-center"
+                onClick={handleBack}
+              >
+                <FaArrowLeft className="h-5 w-5 mr-2" />
+                Atrás
+              </button>
+            </motion.div>
+          )}
 
-              {step === 5 && (
-                  <motion.div
-                      key="step5"
-                      initial={{ x: "100%", opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      exit={{ x: "-100%", opacity: 0 }}
-                      transition={{ duration: 1, ease: "easeInOut" }}
-                      className="absolute w-full max-w-md sm:max-w-lg md:max-w-5xl p-6 sm:p-8 md:p-12 bg-pink-100 rounded-xl shadow-lg overflow-hidden"
+          {step === 5 && (
+            <motion.div
+              key="step5"
+              initial={{ x: '100%', opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: '-100%', opacity: 0 }}
+              transition={{ duration: 1, ease: 'easeInOut' }}
+              className="absolute w-full max-w-md sm:max-w-lg md:max-w-5xl p-6 sm:p-8 md:p-12 bg-pink-100 rounded-xl shadow-lg overflow-hidden"
+            >
+              <div className="bg-pink-100 text-center space-y-4 p-4">
+                <h2 className="text-xl sm:text-2xl text-gray-600 mb-4">
+                  ¿Cuál es tu mayor preocupación respecto de tu piel?
+                </h2>
+                <div className="flex flex-col space-y-4 items-center">
+                  <button
+                    className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+                                    hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
+                    onClick={() => handleOptionSelect('mainConcern', 'Acné')}
                   >
-                      <div className="bg-pink-100 text-center space-y-4 p-4">
-                          <h2 className="text-xl sm:text-2xl text-gray-600 mb-4">
-                              ¿Cuál es tu mayor preocupación respecto de tu piel?
-                          </h2>
-                          <div className="flex flex-col space-y-4 items-center">
-                              <button
-                                  className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+                    Acné
+                  </button>
+                  <button
+                    className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
                                     hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                                  onClick={() => handleOptionSelect('mainConcern', 'Acné')}
-                              >
-                                  Acné
-                              </button>
-                              <button
-                                  className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+                    onClick={() => handleOptionSelect('mainConcern', 'Manchas')}
+                  >
+                    Manchas
+                  </button>
+                  <button
+                    className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
                                     hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                                  onClick={() => handleOptionSelect('mainConcern', 'Manchas')}
-                              >
-                                  Manchas
-                              </button>
-                              <button
-                                  className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+                    onClick={() =>
+                      handleOptionSelect('mainConcern', 'Sensibilidad')
+                    }
+                  >
+                    Sensibilidad
+                  </button>
+                  <button
+                    className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
                                     hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                                  onClick={() => handleOptionSelect('mainConcern', 'Sensibilidad')}
-                              >
-                                  Sensibilidad
-                              </button>
-                              <button
-                                  className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+                    onClick={() =>
+                      handleOptionSelect('mainConcern', 'Fotodaño')
+                    }
+                  >
+                    Fotodaño
+                  </button>
+                  <button
+                    className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
                                     hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                                  onClick={() => handleOptionSelect('mainConcern', 'Fotodaño')}
-                              >
-                                  Fotodaño
-                              </button>
-                              <button
-                                  className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+                    onClick={() =>
+                      handleOptionSelect('mainConcern', 'Envejecimiento')
+                    }
+                  >
+                    Envejecimiento
+                  </button>
+                  <button
+                    className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
                                     hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                                  onClick={() => handleOptionSelect('mainConcern', 'Envejecimiento')}
-                              >
-                                  Envejecimiento
-                              </button>
-                              <button
-                                  className="w-full max-w-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
-                                    hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                                  onClick={() => handleOptionSelect('mainConcern', 'Bolsas y ojeras')}
-                              >
-                                  Bolsas y ojeras
-                              </button>
-                          </div>
-                      </div>
-                      < button className="absolute pt-4 bottom-1 right-4 font-semibold text-lg text-pink-400 
-                            transition-transform duration-300 hover:scale-110 flex items-center" 
-                               onClick={handleBack}>
-                              <FaArrowLeft className="h-5 w-5 mr-2" />
-                            Atrás
-                        </button>
-                  </motion.div>
-              )}
+                    onClick={() =>
+                      handleOptionSelect('mainConcern', 'Bolsas y ojeras')
+                    }
+                  >
+                    Bolsas y ojeras
+                  </button>
+                </div>
+              </div>
+              <button
+                className="absolute pt-4 bottom-1 right-4 font-semibold text-lg text-pink-400 
+                            transition-transform duration-300 hover:scale-110 flex items-center"
+                onClick={handleBack}
+              >
+                <FaArrowLeft className="h-5 w-5 mr-2" />
+                Atrás
+              </button>
+            </motion.div>
+          )}
 
           {step === 6 && (
             <motion.div
-                key="step6"
-                initial={{ x: "100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                exit={{ x: "-100%", opacity: 0 }}
-                transition={{ duration: 1, ease: "easeInOut" }}
-                className="flex w-full max-w-md sm:max-w-lg md:max-w-5xl p-6 sm:p-8 md:p-12 bg-white rounded-xl shadow-lg overflow-hidden"
+              key="step6"
+              initial={{ x: '100%', opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: '-100%', opacity: 0 }}
+              transition={{ duration: 1, ease: 'easeInOut' }}
+              className="flex w-full max-w-md sm:max-w-lg md:max-w-5xl p-6 sm:p-8 md:p-12 bg-white rounded-xl shadow-lg overflow-hidden"
             >
-                <div className="bg-white text-center space-y-4 p-4">
-                    <h2 className="text-xl sm:text-2xl text-gray-600 mb-4">
-                        Estos son los productos recomendados para vos!
-                    </h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-                        {recommendedProducts.map((product, index) => (
-                            <div
-                                key={index}
-                                className="p-4 rounded-lg shadow-md flex flex-col items-center"
-                            >
-                                <h3 className="text-lg font-semibold text-gray-800 mb-2">{product.text}</h3>
-                                <img
-                                    src={product.src}
-                                    alt={product.alt}
-                                    className="w-full h-auto object-cover rounded-lg mb-4"
-                                />
-                                <p className="text-gray-600">{product.description}</p>
-                            </div>
-                        ))}
+              <div className="bg-white text-center space-y-4 p-4">
+                <h2 className="text-xl sm:text-2xl text-gray-600 mb-4">
+                  Estos son los productos recomendados para vos!
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+                  {recommendedProducts.map((product, index) => (
+                    <div
+                      key={index}
+                      className="p-4 rounded-lg shadow-md flex flex-col items-center"
+                    >
+                      <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                        {product.text}
+                      </h3>
+                      <img
+                        src={product.src}
+                        alt={product.alt}
+                        className="w-full h-auto object-cover rounded-lg mb-4"
+                      />
+                      <p className="text-gray-600">{product.description}</p>
                     </div>
-                    <div className="flex flex-col items-center space-y-4 mt-6">
-                    <a
-                    href="https://wa.me/5493865411112?text=Hola%2Cme%20interesan%20los%20productos%20que%20me%20sugeriste."
+                  ))}
+                </div>
+                <div className="flex flex-col items-center space-y-4 mt-6">
+                  <a
+                    href="https://wa.me/5493865213958?text=Hola%2Cme%20interesan%20los%20productos%20que%20me%20sugeriste."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-6 px-6 py-3 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
                           hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                    >
-                      Consulta por un Producto
-                      </a>
-                    <button
-                        className="mt-6 px-6 py-3 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
+                  >
+                    Consulta por un Producto
+                  </a>
+                  <button
+                    className="mt-6 px-6 py-3 text-base sm:text-lg font-medium text-white bg-pink-400 rounded-lg shadow-md
                           hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 active:bg-pink-600"
-                        onClick={() => setStep(1)}
-                    >
-                        Repetir Test
-                    </button>
-                    </div>
+                    onClick={() => setStep(1)}
+                  >
+                    Repetir Test
+                  </button>
                 </div>
+              </div>
             </motion.div>
           )}
-
-          </AnimatePresence>
+        </AnimatePresence>
       </div>
-  );
+    );
 }
 
 export default TestSlider;

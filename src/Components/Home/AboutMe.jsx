@@ -39,15 +39,15 @@ const AboutMe = () => {
         </h1>
         <p className="p-about pt-5 text-[17px] font-serif" data-aos="fade-up">
           Mi nombre es Micaela,soy <strong> cosmiatra y maquilladora.</strong>
-          Es un placer poder empezar a compartir mi trabajo.
+          { ' '}Es un placer poder empezar a compartir mi trabajo.
           <br />
           Me concentro en la propuesta de tratamientos con{' '}
           <strong>productos naturales</strong> compatibles con rutinas
           específicas para todo tipo de piel. ✨ Te podré asesorar y recomendar
           lo que tu piel necesite específicamente. 👌🏼 ✨ Disfruto mucho de
-          maquillar y hacer sentir a las mujeres más bellas aún!
+          maquillar y hacer sentir a las mujeres más bellas aún!.
           <br />
-          Aura es mi propia marca de SkinCare.¡Porque Aura?{' '}
+          <strong>AURA</strong> es mi propia marca de SkinCare.¡Porque Aura?{' '}
           <strong>AURA</strong>: Por definición es la energía positiva que
           transmiten los seres humanos y esto para mí es muy significativo Cada
           vez que entras en contacto con mis cremas tenés la sensación de

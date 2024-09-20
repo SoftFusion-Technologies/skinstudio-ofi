@@ -122,7 +122,7 @@ const Navbar = () => {
               <div className="text-3xl font-extrabold text-pink-600 mb-1">
                 Mica Molina
               </div>
-              <div className="text-md text-gray-600">Cosmetóloga & Make Up</div>
+              <div className="text-md text-gray-600">Cosmiatra & Make Up</div>
             </div>
           </a>
         </div>

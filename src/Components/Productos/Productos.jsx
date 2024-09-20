@@ -141,7 +141,7 @@ return (
                         className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center rounded-lg opacity-0 
                                                         transition-opacity duration-300 ease-in-out hover:opacity-100"
                       >
-                        <p className="text-white text-center p-2 hidden">
+                        <p className="text-white text-center p-2 ">
                           {product.description}
                         </p>
                         <a
@@ -180,7 +180,7 @@ return (
                       className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center rounded-lg opacity-0 
                                                 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
                     >
-                      <p className="text-white text-center p-2 hidden">
+                      <p className="text-white text-center p-2">
                         {product.description}
                       </p>
                       <a
