@@ -112,17 +112,17 @@ const Productos = () => {
 
 
 return (
-  <div className="p-4">
+  <div className="p-4 max-w-screen-lg mx-auto overflow-hidden">
     <div className="p-6">
       <h1 className="text-center text-pink-400 text-5xl font-bold mb-4 mt-4">
         PRODUCTOS
       </h1>
       {sections.map((section, index) => (
-        <div key={index} className="mb-8 p-4 rounded-lg shadow-lg">
+        <div key={index} className="mb-8 p-2 sm:p-4 rounded-lg shadow-lg">
           <h2 className="text-left text-pink-400 text-3xl font-semibold mb-2 border-b-2">
             {section.title}
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4">
             {section.products.length === 2 ? (
               <div className="flex justify-center col-span-3">
                 {section.products.map((product, productIndex) => {
@@ -130,12 +130,12 @@ return (
                   return (
                     <div
                       key={productIndex}
-                      className="relative flex flex-col items-center mx-2"
+                      className="relative flex flex-col items-center mx-2 min-h-[500px]"
                     >
                       <img
                         src={product.src}
                         alt={product.alt}
-                        className="w-full h-auto rounded-lg shadow-md transition duration-300 ease-in-out"
+                        className="w-full h-auto max-w-full rounded-lg shadow-md transition duration-300 ease-in-out"
                       />
                       <div
                         className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center rounded-lg opacity-0 
@@ -169,16 +169,16 @@ return (
                 return (
                   <div
                     key={productIndex}
-                    className="relative flex flex-col items-center group"
+                    className="relative flex flex-col items-center group min-h-[500px]"
                   >
                     <img
                       src={product.src}
                       alt={product.alt}
-                      className="w-full h-auto rounded-lg shadow-md transition duration-300 ease-in-out"
+                      className="w-full h-auto max-w-full rounded-lg shadow-md transition duration-300 ease-in-out"
                     />
                     <div
                       className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center rounded-lg opacity-0 
-                                                transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+                                                transition-opacity duration-300 ease-in-out group-hover:opacity-100 overflow-hidden"
                     >
                       <p className="text-white text-center p-2">
                         {product.description}

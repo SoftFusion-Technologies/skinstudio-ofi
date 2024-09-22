@@ -7,12 +7,12 @@ import SkinTest from './SkinTest'
 import Mapa from '../Components/Mapa'
 const Home = () => {
   return (
-    <>
+    <div className='overflow-hidden'>
       <ContentSlider></ContentSlider>
       <AboutMe></AboutMe>
       <ProductLink />
       <Mapa></Mapa>
-    </>
+    </div>
   );
 }
 

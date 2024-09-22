@@ -18,7 +18,7 @@ const ProductLink = () =>{
     return (
       <div
         data-aos="flip-up"
-        className="p-4 mb-10 bg-transparent flex justify-center"
+        className="p-4 mb-10 bg-transparent flex justify-center max-w-screen-lg mx-auto"
       >
         <div className="p-4  w-full bg-gradient-to-r from-pink-200 to-white rounded-lg shadow-gray-300 shadow-xl">
           <div className="pt-6">
@@ -48,4 +48,5 @@ const ProductLink = () =>{
     );
 };
 
-export default ProductLink;
+export default ProductLink;  
+

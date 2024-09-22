@@ -62,24 +62,26 @@ const ProductosDestacados = () => {
     };
 
     return (
-        <div className="py-12 font-lora font-bold" data-aos="fade-down">
+        <div className="py-12 font-lora font-bold max-w-screen-lg mx-auto" data-aos="fade-down">
             <div className="container mx-auto">
                 <h2 className="text-4xl font-lora text-center text-pink-500 mb-8">
                     DESTACADOS
                 </h2>
+                <div className="overflow-hidden">
                 <Slider {...sliderSettings} className="slick-slider">
                     {ProductosDestacados.map((prod, index) => (
-                        <div key={index} className="p-4">
+                        <div key={index} className="p-2 sm:p-4">
                             <div className="bg-gray-100 rounded-lg shadow-lg p-4 hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
                                 <img
                                     src={prod}
                                     alt={`Producto Dest ${index + 1}`}
-                                    className="w-full h-32 object-contain"
+                                    className="w-full h-32 object-contain max-w-full"
                                 />
                             </div>
                         </div>
                     ))}
                 </Slider>
+                </div>
             </div>
         </div>
     );
