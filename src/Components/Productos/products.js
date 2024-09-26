@@ -33,6 +33,22 @@ import Maskarilla from '../../Images/Products/Mascarillas/Maskarilla.png'
 import MaskTea from '../../Images/Products/Mascarillas/MaskTea.png'
 import MaskTermal from '../../Images/Products/Mascarillas/MaskTermal.png'
 
+import ExfolianteScrub from '../../Images/Products/Varios/ExfolianteScrub.png'
+import ExfoliantePads from '../../Images/Products/Varios/ExfoliantePads.png'
+
+import JaleaDesp from '../../Images/Products/Despigmentantes/JaleaDesp.png'
+import serumA from '../../Images/Products/Despigmentantes/serumA.png'
+import glow from '../../Images/Products/Despigmentantes/glow.png'
+import Suero from '../../Images/Products/Despigmentantes/Suero.png'
+import Suero1 from '../../Images/Products/Despigmentantes/Sueroal10.png'
+
+import Protector from '../../Images/Products/Varios/ProtectorSolar.png'
+import RollC from '../../Images/Products/Varios/RollC.png'
+import LipSerum from '../../Images/Products/Varios/Lip.png'
+import Kitviaje from '../../Images/Products/Varios/Kitviaje.png'
+import Micelarxl from '../../Images/Products/Locion/Agua3en1.png'
+
+
 export {
     Product1,
     Product2,
@@ -63,4 +79,16 @@ export {
     Maskarilla,
     MaskTea,
     MaskTermal,
+    ExfolianteScrub,
+    ExfoliantePads,
+    JaleaDesp,
+    glow,
+    serumA,
+    Suero,
+    Suero1,
+    Protector,
+    RollC,
+    LipSerum,
+    Kitviaje,
+    Micelarxl,
 }

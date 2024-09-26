@@ -29,6 +29,18 @@ import{
     Maskarilla,
     MaskTea,
     MaskTermal,
+    ExfolianteScrub,
+    ExfoliantePads,
+    JaleaDesp,
+    serumA,
+    glow,
+    Suero,
+    Suero1,
+    Protector,
+    RollC,
+    LipSerum,
+    Kitviaje,
+    Micelarxl,
     
 } from './products';
 
@@ -74,9 +86,9 @@ const Productos = () => {
             },
             { 
               src: Gelflores, 
-              alt: 'Gel Flores y Frutos Rojos',
-              description: 'El agua micelar es un limpiador suave que elimina maquillaje y suciedad, dejando la piel hidratada y fresca. Ideal para todo tipo de piel, su fórmula suave no requiere enjuague y es perfecta para uso diario.',
-              name: 'Gel Flores y Frutos Rojos' 
+              alt: 'Gel Flores y Frutos del Bosque',
+              description: 'GEL DE LIMPIEZA DIARIO: limpia en profundidad, refresca la piel, suaviza y calma, eliminando impurezas, grasitud y restos de maquillaje sin dejar sensación de piel seca o irritada; ideal para pieles grasas, mixtas y sensibles.',
+              name: 'Gel Flores y Frutos del Bosque' 
             },
             { 
               src: Gelsalisylic, 
@@ -110,15 +122,26 @@ const Productos = () => {
       ],
     },
     {
-      title: 'Exfoliante',
+      title: 'Exfoliantes',
         products: [
           { 
             src: Product6, 
             alt: 'Loción Ac. Salicílico',
             description: 'La loción con ácido salicílico es perfecta para tratar y prevenir imperfecciones. Su fórmula ligera penetra profundamente en la piel, ayudando a controlar el exceso de grasa y mejorando visiblemente la textura de la piel.',
             name: 'Loción Ac' 
-        },
-
+          },
+          { 
+            src: ExfoliantePads, 
+            alt: 'Renew Pads Exfoliantes',
+            description: 'Es un tratamiento de renovación celular que combina el efecto Exfoliante y regenerador de los activos del disco.',
+            name: 'Renew Pads Exfoliantes' 
+          },
+          { 
+            src: ExfolianteScrub, 
+            alt: 'Scrub Exfoliante de Ducha',
+            description: 'Scrub Exfoliante Corporal y Facial: exfolia, renueva y suaviza la piel. Realiza un pulido en la piel para su total renovación dejando aroma a lavandas y vainilla.',
+            name: 'Scrub Exfoliante de Ducha' 
+          },
         ]
     },
     {
@@ -127,7 +150,7 @@ const Productos = () => {
           { 
               src: SerumSalicilico, 
               alt: 'Serum / Ácido Salicílico',
-              description: 'Nuestro Serum de ácido salicílico...',
+              description: 'Este sérum de tratamiento está formulado con ácido salicílico, un poderoso exfoliante que penetra profundamente en los poros para eliminar impurezas y células muertas.',
               name: 'Serum Ácido Salicílico' 
           },
           { 
@@ -137,6 +160,41 @@ const Productos = () => {
             name: 'Serum Ácido Glicólico' 
           }
       ],
+    },
+    {
+      title: 'Despigmentantes',
+        products: [
+          {
+            src: JaleaDesp, 
+            alt: 'Jalea Despigmentante',
+            description: 'Equilibrada combinacion de Alfa Hidroxiacidos ( Glicolico, Citrico , Lactico ) ideal para eliminar manchas en zonas como Axilas , Bozo , Cavado ,producidas muchas veces por la depilacion',
+            name: 'Jalea Despigmentante' 
+          },
+          {
+            src: serumA, 
+            alt: 'Serum A Plus Retinol',
+            description: 'Serum de rápida absorción. Promueve la renovación celular de la epidermis y evita que las células nuevas envejezcan rápidamente. Por su condición liposoluble penetra a capas mas profundas, aumenta la producción de colágeno, este se muestra implacable renovando la piel logrando que se vea mas tersa y suave.',
+            name: 'Serum A Plus Retinol' 
+          },
+          {
+            src: glow, 
+            alt: 'Serum Glow N Plus',
+            description: 'Neutraliza radicales libres, unifica el tono, hidrata, rellena, reafirma, repara la barrera de la piel, despigmenta, ilumina y suaviza.',
+            name: 'Serum Glow N Plus' 
+          },
+          {
+            src: Suero, 
+            alt: 'Serum Aclarant',
+            description: 'COMPLEJO UTRA DESPIGMENTANTE 365. Son PLURI-ACTIVOS ACLARANTES que pueden utilizarse los 365 dias del año.',
+            name: 'Serum Aclarant' 
+          },
+          {
+            src: Suero1, 
+            alt: 'Suero de Vitamina C al 10%',
+            description: 'Ácido Ascórbico 10%: Vitamina C en forma pura. Alto poder despigmentante y antioxidante. Suaviza manchas e ilumina.',
+            name: 'Suero de Vitamina C' 
+          }
+        ],
     },
     {
         title: 'Tonicos y Bruma',
@@ -222,21 +280,45 @@ const Productos = () => {
         ]
     },
     {
-        title: 'Promociones',
+        title: 'Otros',
         products: [
             { 
                 src: Promo2, 
-                alt: 'Promo Variados',
-                description: 'Disfruta de nuestra promoción variada, que incluye productos seleccionados a precios especiales. Perfecto para quienes desean probar diferentes productos de nuestra línea.',
-                name: 'Promo Variados' 
+                alt: 'Rutina Completa',
+                description: 'Kit de cuidado completo para la piel que incluye todo lo necesario para limpiar, hidratar y proteger tu rostro. Ideal para mantener una piel sana y radiante todos los días.',
+                name: 'Rutina Completa' 
+            },
+            {   
+                src: Kitviaje, 
+                alt: 'Kit de Viaje',
+                description: 'Este kit incluye esenciales para tus viajes. Compacto y practico, perfecto para llevar. ',
+                name: 'Kit de Viaje'
             },
             { 
-                src: Promo3, 
-                alt: 'Serum 2',
-                description: 'Aprovecha nuestra promoción del serum, ideal para hidratar y revitalizar la piel. Este producto esencial proporciona un impulso de nutrientes y luminosidad a tu rutina de cuidado.',
-                name: 'Promo Serum'
+              src: Protector, 
+              alt: 'Protector Solar Facial FPS 50',
+              description: 'Filtro UVB/UVA efecto seco matificante, protege e hidrata, repara la piel, unifica el tono, mejora apariencia, disminuye manchas y arrugas; protector solar 75 cc, especial para piel grasa a mixta, aporta hidratación, resiste al agua, rápida absorción, no contiene perfumes, libre de parabenos, libre de siliconas, cruelty free, sin TACC.',
+              name: 'Protector Solar Facial FPS 50' 
             },
-            // { src: Promo1, alt: 'PGel 5'}
+            { 
+              src: RollC, 
+              alt: 'Roll C Tratamiento para Ojeras',
+              description: 'Debido al poder antioxidante y despigmentante del complejo de vitamina c, el Serum Roll C aclara ojeras pigmentadas. La presencia de Liposomas de cafeína, le confiere propiedades tonificantes favoreciendo la micro- circulación y reduciendo la retención de líquidos. El ácido hialuronico hidrata y el té verde actúa como antioxidante. Su envase ROLL le brinda un plus para que la aplicación en frío beneficie aún más a las ojeras y bolsas.',
+              name: 'Roll C Tratamiento para Ojeras' 
+            },
+            { 
+              src: LipSerum, 
+              alt: 'Lip Care Serum Reparador Con Vitamina E',
+              description: 'Repara y restaura. Hidrata en profundidad. Protege de agresiones externas. Resultado: Labios sanos y fuertes con un riquísimo aroma a frambuesas y coco.',
+              name: 'Lip Care Serum Reparador Con Vitamina E' 
+            },
+            { 
+              src: Micelarxl, 
+              alt: 'Agua Micelar 3 en 1 XL',
+              description: 'Limpia, desmaquilla y tonifica el rostro en un solo paso, suavemente sin dejar sensación grasa. Ideal para todo tipo de piel en especial pieles normales a secas.',
+              name: 'Agua Micelar 3 en 1 XL' 
+            },
+            
         ],
     },
 ];
