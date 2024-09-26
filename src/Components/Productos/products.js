@@ -10,6 +10,28 @@ import Promo1 from '../../Images/Products/Gel/PGel5.webp'
 import Promo2 from '../../Images/Products/Cremas/ProdVarios.webp'
 import Promo3 from '../../Images/Products/Serum/PSerum2.webp'
 
+import LocionACS from '../../Images/Products/Locion/LocionACS.png'
+import Gelsalisylic from '../../Images/Products/Gel/Gelsalisylic.png'
+import Gelflores from '../../Images/Products/Gel/Gelflores.png'
+
+import brumavitc from'../../Images/Products/Bruma/brumavitc.png'
+import brumarosas from '../../Images/Products/Bruma/brumarosas.jpg'
+import brumatermal from '../../Images/Products/Bruma/brumatermal.jpg'
+
+import emulsionrosas from '../../Images/Products/Emulsion/emulsionrosas.png'
+import Emulsion2 from '../../Images/Products/Emulsion/Emulsion2.png'
+import Emulsionfacial from '../../Images/Products/Emulsion/Emulsionfacial.png'
+import EmulsionGN from '../../Images/Products/Emulsion/EmulsionGN.png'
+
+import serumrose from '../../Images/Products/Serum/serumrose.png'
+import SerumSalicilico from '../../Images/Products/Serum/SerumSalicilico.png'
+import SerumGlicolico from '../../Images/Products/Serum/SerumGlicolico.png'
+import aguamicelar from '../../Images/Products/Locion/aguamicelar.png'
+
+import MaskAntiacne from '../../Images/Products/Mascarillas/MaskAntiacne.png'
+import Maskarilla from '../../Images/Products/Mascarillas/Maskarilla.png'
+import MaskTea from '../../Images/Products/Mascarillas/MaskTea.png'
+import MaskTermal from '../../Images/Products/Mascarillas/MaskTermal.png'
 
 export {
     Product1,
@@ -23,5 +45,22 @@ export {
     Promo1,
     Promo2,
     Promo3,
-    
+    brumavitc,
+    brumarosas,
+    brumatermal,
+    emulsionrosas,
+    Emulsion2,
+    Emulsionfacial,
+    EmulsionGN,
+    serumrose,
+    SerumSalicilico,
+    SerumGlicolico,
+    aguamicelar,
+    LocionACS,
+    Gelsalisylic,
+    Gelflores,
+    MaskAntiacne,
+    Maskarilla,
+    MaskTea,
+    MaskTermal,
 }

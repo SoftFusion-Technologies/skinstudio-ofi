@@ -11,6 +11,24 @@ import{
     Promo1,
     Promo2,
     Promo3,
+    brumavitc,
+    brumarosas,
+    brumatermal,
+    emulsionrosas,
+    serumrose,
+    SerumSalicilico,
+    SerumGlicolico,
+    aguamicelar,
+    Emulsion2,
+    Emulsionfacial,
+    EmulsionGN,
+    Gelflores,
+    Gelsalisylic,
+    LocionACS,
+    MaskAntiacne,
+    Maskarilla,
+    MaskTea,
+    MaskTermal,
     
 } from './products';
 
@@ -34,23 +52,6 @@ const Productos = () => {
 
    const sections = [
     {
-        title: 'Tratamiento',
-        products: [
-            { 
-                src: Product1, 
-                alt: 'Crema Anti Age',
-                description: 'Esta crema anti edad está formulada con ingredientes potentes que ayudan a reducir las arrugas y mejorar la elasticidad de la piel. Su textura ligera se absorbe rápidamente, proporcionando hidratación profunda y un aspecto rejuvenecido.',
-                name: 'Crema Anti Age' 
-            },
-            { 
-                src: Product8, 
-                alt: 'Serum / Ácido Glicólico',
-                description: 'Nuestro serum de ácido glicólico exfolia suavemente la piel, eliminando las células muertas y promoviendo una textura más suave. Ideal para combatir manchas y mejorar el tono de la piel, dejando un acabado luminoso y radiante.',
-                name: 'Serum Ácido Glicólico' 
-            }
-        ],
-    },
-    {
         title: 'Limpieza',
         products: [
             { 
@@ -66,29 +67,159 @@ const Productos = () => {
                 name: 'Gel de Limpieza Ac.' 
             },
             { 
-                src: Product6, 
-                alt: 'Loción Ac. Salicílico',
-                description: 'La loción con ácido salicílico es perfecta para tratar y prevenir imperfecciones. Su fórmula ligera penetra profundamente en la piel, ayudando a controlar el exceso de grasa y mejorando visiblemente la textura de la piel.',
-                name: 'Loción Ac' 
+              src: aguamicelar, 
+              alt: 'Agua Micelar',
+              description: 'El agua micelar es un limpiador suave que elimina maquillaje y suciedad, dejando la piel hidratada y fresca. Ideal para todo tipo de piel, su fórmula suave no requiere enjuague y es perfecta para uso diario.',
+              name: 'Agua Micelar' 
+            },
+            { 
+              src: Gelflores, 
+              alt: 'Gel Flores y Frutos Rojos',
+              description: 'El agua micelar es un limpiador suave que elimina maquillaje y suciedad, dejando la piel hidratada y fresca. Ideal para todo tipo de piel, su fórmula suave no requiere enjuague y es perfecta para uso diario.',
+              name: 'Gel Flores y Frutos Rojos' 
+            },
+            { 
+              src: Gelsalisylic, 
+              alt: 'Gel de Limpieza Profunda Salisylic',
+              description: 'Gel limpiador facial de limpieza profunda con acido salicílico. Rompe el comedón dejando limpio el poro.',
+              name: 'Gel de Limpieza Profunda Salisylic' 
+            },
+            { 
+              src: LocionACS, 
+              alt: 'Locion Ácido Salicílico',
+              description: 'LOCION EN SPRAY CON ACIDO SALICILICO, EXFOLIA LA PIEL REMOVIENDO CELULAS MUERTAS.',
+              name: 'Locion Ácido Salicílico' 
             },
         ],
     },
     {
-        title: 'Hidratación',
+      title: 'Hidratación',
+      products: [
+          { 
+              src: Product1, 
+              alt: 'Crema Anti Age',
+              description: 'Esta crema anti edad está formulada con ingredientes potentes que ayudan a reducir las arrugas y mejorar la elasticidad de la piel. Su textura ligera se absorbe rápidamente, proporcionando hidratación profunda y un aspecto rejuvenecido.',
+              name: 'Crema Anti Age' 
+          },
+          { 
+            src: serumrose, 
+            alt: 'Serum / Ácido Hialuronico',
+            description: 'Logra una piel hidratada, elástica y fresca. Su rápida absorción lo convierte en un producto apto para todos los tipos de pieles',
+            name: 'Serum Hyaluronic Rose ' 
+          }
+      ],
+    },
+    {
+      title: 'Exfoliante',
         products: [
-            { 
-                src: Product5, 
-                alt: 'Agua Micelar',
-                description: 'El agua micelar es un limpiador suave que elimina maquillaje y suciedad, dejando la piel hidratada y fresca. Ideal para todo tipo de piel, su fórmula suave no requiere enjuague y es perfecta para uso diario.',
-                name: 'Agua Micelar' 
-            },
-            { 
-                src: Product4, 
-                alt: 'Gel Limpieza',
-                description: 'Este gel de limpieza facial está diseñado para eliminar impurezas sin resecar la piel. Su fórmula hidratante deja la piel suave y nutrida, siendo ideal para un uso diario.',
-                name: 'Gel de Limpieza Facial' 
-            },
+          { 
+            src: Product6, 
+            alt: 'Loción Ac. Salicílico',
+            description: 'La loción con ácido salicílico es perfecta para tratar y prevenir imperfecciones. Su fórmula ligera penetra profundamente en la piel, ayudando a controlar el exceso de grasa y mejorando visiblemente la textura de la piel.',
+            name: 'Loción Ac' 
+        },
+
+        ]
+    },
+    {
+      title: 'Renovadores',
+      products: [
+          { 
+              src: SerumSalicilico, 
+              alt: 'Serum / Ácido Salicílico',
+              description: 'Nuestro Serum de ácido salicílico...',
+              name: 'Serum Ácido Salicílico' 
+          },
+          { 
+            src: SerumGlicolico, 
+            alt: 'Serum / Ácido Glicólico',
+            description: 'Nuestro serum de ácido glicólico exfolia suavemente la piel, eliminando las células muertas y promoviendo una textura más suave. Ideal para combatir manchas y mejorar el tono de la piel, dejando un acabado luminoso y radiante.',
+            name: 'Serum Ácido Glicólico' 
+          }
+      ],
+    },
+    {
+        title: 'Tonicos y Bruma',
+        products: [
+          {
+            src: brumavitc,
+            alt: 'Bruma Vitamina C',
+            description: 'Esta Bruma ideal para el verano refresca e ilumina la piel, descongestiona y calma.',
+            name: 'Bruma Vitamina C'
+          },
+          {
+            src: brumarosas,
+            alt: 'Bruma Agua de Rosas',
+            description: 'Este tónico natural es lo que todas debemos tener en cuenta en nuestra rutina de belleza. Ideal para usarla todos los días, apta todos los tipos de pieles.',
+            name: 'Bruma Agua de Rosas'
+          },
+          {
+            src: brumatermal,
+            alt: 'Bruma Termal',
+            description:'AGUA TERMAL MINEROMEDICINAL ORIGEN TIERRAS PATAGONICAS NATURALES. Lo que hace diferentes a las aguas termales es el origen. El líquido elemento procede de fuentes termales y esto hace que tengan unas propiedades añadidas diferentes a los demás tipos de tratamientos: contienen una serie de minerales con importantes propiedades naturales.',
+            name: 'Bruma Termal'
+          }
         ],
+    },
+    
+
+    {
+      title: 'Emulsiones',
+      products: [
+        {
+          src: emulsionrosas,
+          alt: 'Emulsion con Agua de Rosas',
+          description: 'Hidrata el rostro sin dejar sensacion grasosa, fluida y de rápida absorción. Apta todo tipo de piel, en especial piel mixta, grasa y sensible.',
+          name: 'Emulsion con Agua de Rosas'
+        },
+        {
+          src: Emulsion2,
+          alt: 'Emulsion Corporal',
+          description: 'El acido hialuronico hidrata profundamente la piel por su capacidad de retener agua. En la forma emulsion permite una rápida absorción sin dejar sensación grasa en la piel del cuerpo.',
+          name: 'Emulsion Corporal con Ácido Hialurónico'
+        },
+        {
+          src: Emulsionfacial,
+          alt: 'Emulsion Hyaluronic',
+          description: 'Hidrata el rostro sin dejar sensacion grasosa, fluida y de rápida absorción. Apta todo tipo de piel. Hidrata profundamente, rellena y reafima.',
+          name: 'Emulsion Hyaluronic'
+        },
+        {
+          src: EmulsionGN,
+          alt: 'Emulsion Glow N',
+          description: 'Emulsion hidratante con Niacinamida, Acido Hialuronico y Te Verde. HIDRATA E ILUMINA. Unifica el tono.Despigmentante y Seborregulador',
+          name: 'Emulsion Glow N'
+        },
+      ],
+    },
+    {
+      title: 'Mascarillas',
+        products: [
+          {
+            src: MaskAntiacne,
+            alt: 'Mascarilla Detox',
+            description: 'Nuestra mascarilla Detox es la combinación perfecta de cuidado y prevención. Sus componentes son ideales para pieles grasas, pieles mixtas, pieles. acneicas, poros abiertos y muchos puntos negros.',
+            name: 'Mascarilla Detox',
+          },
+          {
+            src: Maskarilla,
+            alt: 'Mascarilla Hyaluronic',
+            description: 'Es ideal para hidratar el rostro profundamente. Perfecta para todo tipo de pieles en especial pieles secas y deshidratadas',
+            name: 'Mascarilla Hyaluronic',
+          },
+          {
+            src: MaskTea,
+            alt: 'Mascarilla con Tea Tree',
+            description: 'Nuestra mascarilla Tea TREE es simplemente perfecta para nutrir y desinflamar nuestro rostro después de una rutina agitada. Sus componentes son ideales para pieles grasas, pieles mixtas, pieles acneicas, poros abiertos, pieles desnutridas y averiadas.',
+            name: 'Mascarilla con Tea Tree',
+          },
+          {
+            src: MaskTermal,
+            alt: 'Mask Termal B5',
+            description: 'Es una mascarilla multiuso, para utilizar en rostro y labios. Se puede aplicar también para promover la cicatrización como tatuajes o heridas superficiales, en irritaciones y dermatitis por alergia.',
+            name: 'Mask Termal B5',
+          }
+        ]
     },
     {
         title: 'Promociones',
