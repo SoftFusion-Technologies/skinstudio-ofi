@@ -6,7 +6,7 @@ function WhatsappBut() {
     e.preventDefault(); // Evita el comportamiento predeterminado de <a>
     
     // Abrir las páginas con un pequeño retraso
-    window.open('https://www.instagram.com/softfusiontechnologies/1', '_blank');
+    window.open('https://www.instagram.com/mm.skinstudio/', '_blank');
     setTimeout(() => window.open('https://api.whatsapp.com/send?phone=3863531891', '_blank'), 2500);
     setTimeout(() => window.open('https://softfusion.com.ar/', '_blank'), 2500); 
   };
