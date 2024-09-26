@@ -96,12 +96,7 @@ const Productos = () => {
               description: 'Gel limpiador facial de limpieza profunda con acido salicílico. Rompe el comedón dejando limpio el poro.',
               name: 'Gel de Limpieza Profunda Salisylic' 
             },
-            { 
-              src: LocionACS, 
-              alt: 'Locion Ácido Salicílico',
-              description: 'LOCION EN SPRAY CON ACIDO SALICILICO, EXFOLIA LA PIEL REMOVIENDO CELULAS MUERTAS.',
-              name: 'Locion Ácido Salicílico' 
-            },
+            
         ],
     },
     {
@@ -118,7 +113,13 @@ const Productos = () => {
             alt: 'Serum / Ácido Hialuronico',
             description: 'Logra una piel hidratada, elástica y fresca. Su rápida absorción lo convierte en un producto apto para todos los tipos de pieles',
             name: 'Serum Hyaluronic Rose ' 
-          }
+          },
+          {
+            src: glow, 
+            alt: 'Serum Glow N Plus',
+            description: 'Neutraliza radicales libres, unifica el tono, hidrata, rellena, reafirma, repara la barrera de la piel, despigmenta, ilumina y suaviza.',
+            name: 'Serum Glow N Plus' 
+          },
       ],
     },
     {
@@ -141,6 +142,12 @@ const Productos = () => {
             alt: 'Scrub Exfoliante de Ducha',
             description: 'Scrub Exfoliante Corporal y Facial: exfolia, renueva y suaviza la piel. Realiza un pulido en la piel para su total renovación dejando aroma a lavandas y vainilla.',
             name: 'Scrub Exfoliante de Ducha' 
+          },
+          { 
+            src: LocionACS, 
+            alt: 'Locion Ácido Salicílico',
+            description: 'LOCION EN SPRAY CON ACIDO SALICILICO, EXFOLIA LA PIEL REMOVIENDO CELULAS MUERTAS.',
+            name: 'Locion Ácido Salicílico' 
           },
         ]
     },
@@ -175,12 +182,6 @@ const Productos = () => {
             alt: 'Serum A Plus Retinol',
             description: 'Serum de rápida absorción. Promueve la renovación celular de la epidermis y evita que las células nuevas envejezcan rápidamente. Por su condición liposoluble penetra a capas mas profundas, aumenta la producción de colágeno, este se muestra implacable renovando la piel logrando que se vea mas tersa y suave.',
             name: 'Serum A Plus Retinol' 
-          },
-          {
-            src: glow, 
-            alt: 'Serum Glow N Plus',
-            description: 'Neutraliza radicales libres, unifica el tono, hidrata, rellena, reafirma, repara la barrera de la piel, despigmenta, ilumina y suaviza.',
-            name: 'Serum Glow N Plus' 
           },
           {
             src: Suero, 
