@@ -24,12 +24,13 @@ const AboutMe = () => {
     };
   }, []);
   
-  return (
+  return ( 
     <section
       className="flex flex-col mt-40 mb-40 w-5/6 mx-auto lg:flex-row lg:space-x-10 bg-transparent"
       id="us"
       data-aos="fade-right"
     >
+      
       <div className="w-full md:w-1/2 md:mx-auto">
         <h1
           className="h1-about text-4xl font-montserrat text-pink-500"
@@ -83,7 +84,7 @@ const AboutMe = () => {
         </div>
       </div>
     </section>
-  );
+      );
 };
 
 export default AboutMe;
